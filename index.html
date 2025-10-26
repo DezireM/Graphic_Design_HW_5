@@ -1,61 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Portfolio</title>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<meta name="description" content="Portfolio">
-<meta name="keywords" content="creative, uxui, resume, programmer">
-<meta name="author" content="jennie" >
-<!--Srart Style -->
-<link rel="stylesheet" type="text/css" href="css/animate.css">
-<link rel="stylesheet" type="text/css" href="css/fonts.css">
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
-<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
-<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<!-- Favicon Link -->
-<link rel="shortcut icon" type="image/png" href="images/header/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dezire Maatkabylova | Health Tracker</title>
+    <meta name="description" content="Health tracking website for everyone by Dezire Maatkabylova">
+    <meta name="author" content="Dezire Maatkabylova">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="shortcut icon" type="image/png" href="images/header/favicon.png">
+
+    <style>
+        /* === General Styles === */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* === Hero Section === */
+        .prt_home_wrapper {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #00b4db, #0083b0);
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .prt_logo_wrapper {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .prt_logo_wrapper img {
+            width: 50px;
+            cursor: pointer;
+        }
+
+        .prt_menu_wrapper {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+        }
+
+        .prt_menu_wrapper a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .prt_menu_wrapper a:hover {
+            color: #ffdd57;
+        }
+
+        .typed-strings h1 {
+            font-size: 2rem;
+            margin: 10px 0;
+        }
+
+        .my-name {
+            color: #ffdd57;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .typed-strings h1 {
+                font-size: 1.5rem;
+            }
+            .prt_menu_wrapper {
+                right: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
 
-<!--Main Wrapper Start-->
-<div>
-	<div class="prt_home_wrapper">
-		<div class="prt_logo_wrapper">
-			<a><img src="images/header/bullet-point.png" alt="Logo" id="prt_close_tab"></a>
-		</div>
-		<div class="prt_menu_wrapper">
-			<a href="#about" class="prt_top">about</a>
-			<a href="#contact" class="prt_right">contact</a>
-			<a href="#services" class="prt_bottom">strength</a>
-			<a href="#portfolio" class="prt_left">portfolio</a>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-6 offset-xl-6 col-lg-6 offset-lg-6 col-md-5 offset-md-5 col-sm-10 offset-sm-2 col-xs-12 offset-xs-0">
-					<div class="typed-strings">
-						<h1>Hi, I'm <span class="my-name">Dezire Maatkabylova</span>.</h1>
-						<h1>Bringing health tracking for everyone.</h1>
-					</div>
-					<h1 class="typed"></h1>
-				</div>
-			</div>
-		</div>
-	</div>
+    <!-- Hero Section -->
+    <header class="prt_home_wrapper">
+    <!-- Logo -->
+    <div class="prt_logo_wrapper">
+        <a href="#"><img src="images/header/bullet-point.png" alt="Logo" class="logo"></a>
+    </div>
 
-<!--Main js file Style--> 
-<script type="text/javascript" src="js/jquery.min.js"></script> 
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="js/plugin/countto/jquery.countTo.js"></script>
-<script type="text/javascript" src="js/plugin/countto/jquery.appear.js"></script>
-<script type="text/javascript" src="js/circles.js"></script>
-<script type="text/javascript" src="js/typed.min.js"></script>
-<script type="text/javascript" src="js/custom.js"></script>
-<!--Main js file End-->
+    <!-- Navigation -->
+    <nav class="prt_menu_wrapper">
+    <a href="#about"><i class="fa fa-user"></i> About</a>
+    <a href="#services"><i class="fa fa-dumbbell"></i> Strength</a>
+    <a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a>
+    <a href="#contact"><i class="fa fa-envelope"></i> Contact</a>
+</nav>
+
+
+    <!-- Hero Text -->
+    <div class="typed-strings">
+        <h1>Hi, I'm <span class="my-name">Dezire Maatkabylova</span>.</h1>
+        <h1>Welcome to the health tracking website for everyone.</h1>
+    </div>
+    <h1 class="typed"></h1>
+
+    <!-- Call-to-Action -->
+    <a href="#about" class="prt_btn hero-btn">Get Started</a>
+</header>
+
+
+    <!-- JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/plugin/countto/jquery.countTo.js"></script>
+    <script src="js/plugin/countto/jquery.appear.js"></script>
+    <script src="js/circles.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script src="js/typed.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    new Typed('.typed', {
+        strings: [
+            "Hi, I'm <span class='my-name'>Dezire Maatkabylova</span>.",
+            "Welcome to the health tracking website for everyone."
+        ],
+       
+    });
+});
+</script>
+
 </body>
 </html>
